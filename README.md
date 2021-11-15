@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/darkstars31/repo_name">
+  <a href="https://github.com/darkstars31/fast-api-discovery">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -10,14 +10,10 @@
   <p align="center">
     This was project was designed and built to explore the use of FastAPI with Firestore as a means to create a lightweight Restful API with persistent document storage (nosql)
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/darkstars31/fast-api-discovery/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/darkstars31/fast-api-discovery/issues">Request Feature</a>
   </p>
 </div>
 
@@ -28,10 +24,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+        <a href="#built-with">Built With</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -48,17 +41,6 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ### Built With
 
@@ -77,18 +59,23 @@
 You can use pip to install the dependencies, but I highly recommend using something like [pipenv](https://github.com/pypa/pipenv) to help manage the project's packages and virtual environment.
 
 * To run the project
-```uvicorn main:app --reload 
+```
+uvicorn main:app --reload 
+```
+
+* Once the project is running locally, you can view the endpoint documentation on your machine
+```
+localhost:8000/docs
 ```
 
 
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* pipenv
-  ```sh
-  pipenv install
-  ```
+* Python 3.9 or >
+* Pip or Pipenv
+* Firestore document database for the project
+* Google Service Account ([More Info Here](https://firebase.google.com/docs/database/admin/start)) (provides the API w/ config for database)
 
 ### Installation
 
